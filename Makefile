@@ -56,11 +56,3 @@ repo_ready:
 #
 flip: c_support\flip.c
 	gcc -o bin\flip c_support\flip.c
-	
-#
-# Make archive
-#
-archive:
-	rm -f pascal-p2.tar.gz
-	tar --exclude='./.git' --exclude='./.cproject' --exclude='./.project' --exclude='./pascal-p2*.tar.gz' -zcvf pascal-p2.tar.gz .
-

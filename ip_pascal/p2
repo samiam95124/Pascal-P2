@@ -1,10 +1,10 @@
 #!/bin/bash
 #
-# Compile with p4 using IP Pascal
+# Compile with p2 using IP Pascal
 #
 # Execute with:
 #
-# p4 <file>
+# p2 <file>
 #
 # Where <file> is the name of the source file without
 # extention. The Pascal file is compiled and run.
@@ -12,7 +12,7 @@
 # and output to and from the running program are from
 # the console, but output to the prr file is placed
 # in <file>.out.
-# The intermediate code is placed in <file>.p4.
+# The intermediate code is placed in <file>.p2.
 #
 
 if [ -z "$1" ]
@@ -34,5 +34,5 @@ fi
 echo
 echo Compiling and running $1
 echo
-./pcom $1.p4 < $1.pas
-./pint $1.p4 $1.out
+./pcom $1.p2 < $1.pas
+./pint $1.p2 $1.out
